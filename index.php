@@ -1,10 +1,13 @@
 <?php
-session_start();
-ob_start();
+
+    session_start();
+
+    ob_start();
 
 require_once('controllers/userController.php');
 require_once('controllers/paiementController.php');
 require_once('controllers/errorController.php');
+require_once 'helpers/utils.php';
 require_once('config/db.php');
 require_once('config/parametre.php');
 require_once('assets/link.php');
@@ -53,5 +56,5 @@ if (class_exists($controller_name)) {
 }else{
     show_error();
 }
-
+require_once('assets/link-js.php');
 require_once('views/layout/footer.php');

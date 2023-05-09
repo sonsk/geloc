@@ -1,3 +1,4 @@
+</div>
    <footer class="footer">
     <div>
         <p>&copy;2023<?php if (date('Y')!=='2023') echo"-". date('Y');?></p>
