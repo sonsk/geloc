@@ -31,3 +31,12 @@
 <link rel="stylesheet" href="<?=base_url?>assets/bootstrap/css/bootstrap.min.css"/>
 <link rel="stylesheet" href="<?=base_url?>assets/bootstrap/css/bootstrap-theme.css"/>
 
+<link rel="stylesheet" href="<?=base_url?>assets/sweetalert/css/sweetalert.css"/>
+<link rel="stylesheet" href="<?=base_url?>assets/sweetalert/css/sweetalert.min.css"/>
+
+
+    <!-- script -->
+<script src="<?=base_url?>assets/sweetalert/js/sweetalert.min.js"></script>
+<script src="<?=base_url?>assets/sweetalert/js/sweetalert.all.js"></script>
+<script src="<?=base_url?>assets/sweetalert/js/sweetalert.all.min.js"></script>
+<script src="<?=base_url?>assets/sweetalert/js/sweetalert.js"></script>

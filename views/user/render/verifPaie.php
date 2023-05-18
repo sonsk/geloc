@@ -1,6 +1,6 @@
-<section class="login-section hidden">
-        <div class="login-container">
-            <div class="login-box">
+<div class="container">
+        <div class="">
+            <div class="">
                 <i class="close fas fa-times-circle"></i>
                 <div class="login-title">
                     <h3>CONFIRMER LE PAIEMENT</h3>
@@ -19,7 +19,7 @@
             
         </div>
     </div>
-</section>
+</div>
 <!-- Modal -->
 <!-- <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">

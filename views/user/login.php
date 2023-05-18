@@ -24,7 +24,7 @@
                     </div>
                 </form>
                 <div class="isRegistered">
-                    <p>Créer un compte bailleur?<span class="text-strong" onclick="show(this)"> Cliquez ici!</span></p>
+                    <p>Créer un compte bailleur?<span class="text-strong"> Cliquez ici!</span></p>
                 </div>
             </div>
         </div>

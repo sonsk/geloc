@@ -1,6 +1,6 @@
-<section class="login-section hidden">
-        <div class="login-container">
-            <div class="login-box">
+
+        <div class="container">
+            <div class="">
                 <i class="close fas fa-times-circle"></i>
                 <div class="login-title">
                     <h3>CONFIRMER LE PAIEMENT</h3>
@@ -21,4 +21,3 @@
             
         </div>
     </div>
-</section>

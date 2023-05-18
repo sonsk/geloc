@@ -8,7 +8,9 @@
     color:white;
     z-index:999;
 }
-
+.container{
+    margin-bottom: 60px;
+}
 .logo h2 a{
     text-decoration:none;
     color:white;
@@ -25,11 +27,92 @@
     height:35px;
     width:35px;
 }
+/*** photo de profile*****/
+.image-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .image-container img {
+    transition: transform 0.3s;
+  }
+  
+  .image-container img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+  
+  .zoom-container {
+    position: relative;
+    width: 25vh; /* Ajustez la taille selon vos besoins */
+    height: 25vh;
+    overflow: hidden;
+  }
+  
+  .zoom-container img {
+    transition: transform 0.3s;
+  }
+  
+  .zoom-container.zoomed img {
+    transform: scale(2); /* Ajustez la valeur de zoom selon vos besoins */
+  }
+  
+  .image-container.zoomed img {
+    transform: scale(1.5);
+  }
+  
+  .image-container:hover .edit-button {
+    visibility: visible;
+  }
+      #image-preview {
+        filter: blur(1px); /* Ajoute l'effet de flou */
+      }
+      .rounded-div {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: #0fb7b6;
+      }
+    
+      .rounded-div input[type="file"] {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        cursor: pointer;
+      }
+    
+      .rounded-div .camera-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #ffffff;
+        font-size: 24px;
+        z-index: 1;
+      }
+    
+      .rounded-div img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      
+    .rounded-div img:hover {
+      transform: scale(1.2);
+      cursor: pointer;
+    }
+   
+
+/****  footer ****/
 .footer{
-    /* position:fixed; */
+    position:fixed;
     bottom:0px;
     width:100%;
-    margin-top:10px;
+    margin-top:50px;
     color:black;
     text-align:center;
     background-color:white;

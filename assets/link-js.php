@@ -1,6 +1,6 @@
     <!-- script -->
-
-    <script src="<?=base_url?>assets/fontawesome/js/fontawesome.js"></script>
+<script src="<?=base_url?>assets/js/profileblur.js"></script>
+<script src="<?=base_url?>assets/fontawesome/js/fontawesome.js"></script>
 <script src="<?=base_url?>assets/fontawesome/js/fontawesome.min.js"></script>
 <script src="<?=base_url?>assets/fontawesome/js/solid.js"></script>
 <script src="<?=base_url?>assets/fontawesome/js/solid.min.js"></script>

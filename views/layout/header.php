@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="<?=base_url?>assets/style.css">
+    <link rel="stylesheet" href="<?=base_url?>assets/sweetalert/css/sweetalert.css"/>
     <script type="text/javascript" src="<?=base_url?>assets/js/index.js" defer></script>
     <title>Geloc</title>
 </head>
@@ -27,11 +28,11 @@
                                     </h5>
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                         <?php if(isset($_SESSION['admin'])): ?>
-                                            <a class="dropdown-item" href="<?=base_url?>user/renders">Manage locataire</a>
-                                            <a class="dropdown-item" href="#">Manage</a>
+                                            <a class="dropdown-item" href="<?=base_url?>render/liste">Manage locataire</a>
+                                            <a class="dropdown-item" href="<?=base_url?>paiement/admin">Workstation</a>
                                         <?php endif;?>
                                         
-                                        <a class="dropdown-item" href="<?=base_url?>user/edit">Profil</a>
+                                        <a class="dropdown-item" href="<?=base_url?>profile/monprofil">Profil</a>
                                         <a class="dropdown-item" href="<?=base_url?>paiement/paie">Paramètres</a>
                                         <a class="dropdown-item" href="<?=base_url?>user/logout">Deconnexion</a>
                                     </div>

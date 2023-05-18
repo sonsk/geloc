@@ -10,10 +10,24 @@ class Utils{
 
         return $name;
     }
+    public static function deleteAllSession(){
+        if(isset($_SESSION['identity'])){
+            $_SESSION[] = null;
+            session_unset();
+        }
 
+        return true;
+    }
     public static function isAdmin(){
         if(!isset($_SESSION['admin'])){
             header('Location: '.base_url);
+        }else{
+            return true;
+        }
+    }
+    public static function isRender(){
+        if(isset($_SESSION['admin'])){
+            header('Location: '.base_url.'paiement/admin');
         }else{
             return true;
         }

@@ -75,16 +75,19 @@ class Paiement{
         return $result;
     }
     public function alertPaie(){
-        $sql = "SELECT status FROM paiement WHERE render_id =".$this->getRenderId();
+        $sql = "SELECT p.status,u.id,u.role FROM paiement p
+        JOIN users u ON p.render_id = u.id
+        WHERE u.role = 'render'
+        AND p.status ='0'
+        AND p.render_id =".$this->getRenderId();
         $query = $this->db->query($sql);
         $alert = $query->fetchAll(PDO::FETCH_OBJ);
 
-       
-        if (isset($alert)) {
-            $_SESSION['verifpaie'] = true ;
-            
+
+        if (!empty($alert)) {
+           return true ;
         }
-        return $alert;
+       return false;
     }
     public function countAttentePaie(){
         $sql = "SELECT status FROM paiement WHERE status = '1'";

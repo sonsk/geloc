@@ -4,31 +4,33 @@ require_once('models/paiement.php');
 class paiementController{
 
     public function paie(){
+        Utils::isRender();
         $buy = new Paiement();
         $buy->setRenderId($_SESSION['identity']->id);
         $paiement = $buy->findAllByRender();
 
         
         $verifAlert = $buy->alertPaie();
+        
         $_SESSION['verifpaie'] = true;
-        if($verifAlert == 0){
+        if ($verifAlert === true) {
             $_SESSION['verifpaie'] = 'retard';
-        }else{
+        }else {
             $_SESSION['verifpaie']= 'ajour';
         }
         
         require_once('views/user/render/paiement.php');
         
     }
-    public function verif(){
+    public function verif() {
         require_once('views/user/render/verifPaie.php');
     }
-    public function confirm(){
+    public function confirm() {
         require_once('views/user/admin/confirmPaie.php');
     }
 
-    public function verifPaie(){
-        if(isset($_POST)){
+    public function verifPaie() {
+        if(isset($_POST)) {
             $id = $_POST['id'];
             if($id){
                 $statusPaie = new Paiement();
@@ -80,6 +82,7 @@ class paiementController{
     
     }
     public function admin(){
+        Utils::isAdmin();
         $attentepaie = new Paiement();
         $countable = new Paiement();
         $count = $attentepaie->countAttentePaie();
